@@ -5,22 +5,25 @@
         public Menu()
         {
 
-            Console.WriteLine("\nChoose a number, and press enter to continu");
-            Console.WriteLine("1. list all cars:");
-            Console.WriteLine("2. Add a new car:");
-            Console.WriteLine("3. Edit a car:");
-            Console.WriteLine("4. Delete a car:");
-            Console.WriteLine("5. Exit applacation!");
+           
 
-            
+
             while (true)
             {
-               // Console.Clear();
-               // Console.CursorVisible = false;
+                Console.WriteLine("\n...............................................");
+                Console.WriteLine("Choose a number, and press Enter to continue:".ToUpper());
+                Console.WriteLine("...............................................");
+                Console.WriteLine("1. List all cars".ToUpper());
+                Console.WriteLine("2. Add a new car".ToUpper());
+                Console.WriteLine("3. Edit a car".ToUpper());
+                Console.WriteLine("4. Delete a car".ToUpper());
+                Console.WriteLine("5. Exit application".ToUpper());
+                Console.WriteLine("\n_______________________");
+
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        Console.WriteLine("1. list all cars:");
+                        ListAllCars();
                         break;
                     case "2":
                         AddNewCar();
@@ -29,13 +32,12 @@
                         EditCar();
                         break;
                     case "4":
-                        Console.WriteLine("4. Delete a car:");
+                        DeleteCar();
                         break;
                     case "5":
-                        Console.WriteLine("5");
                         return;
                     default:
-                        Console.WriteLine("Invalid input, continue showing the menu");
+                        Console.WriteLine("Invalid input. Continuing to show the menu.".ToUpper());
                         break;
                 }
 
