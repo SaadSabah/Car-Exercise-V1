@@ -4,10 +4,6 @@
     {
         public Menu()
         {
-
-           
-
-
             while (true)
             {
                 Console.WriteLine("\n...............................................");
@@ -37,7 +33,9 @@
                     case "5":
                         return;
                     default:
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Invalid input. Continuing to show the menu.".ToUpper());
+                        Console.ResetColor();
                         break;
                 }
 
